@@ -105,7 +105,7 @@ A: With this mod installed, you should be able to experience up to 14 dialogues 
 A: No, it shouldn't.
 
 **Q: Is there any chance that player initiated dialogue will be added in future?**
->A: There are currently no plans for it.
+A: There are currently no plans for it.
 
 **Q: I would like to translate the Cernd friendship into another language. Any chance you could TRAify the mod?**
 A: Sure, we'd be happy to. If you are interested in translating, just send us a line and I'll see what I can do for the next version.
