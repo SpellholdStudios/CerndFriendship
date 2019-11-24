@@ -86,28 +86,28 @@ In addition to the methods above for removing individual components, you can com
 
 ## <a name="faq" id="faq"></a>Frequently Asked Questions
 
-**Q: Is the Cernd Friendship compatible with XYZ mod?**
+**Q: Is the Cernd Friendship compatible with XYZ mod?**  
 A: It most certainly should be, but we have not tested it with every single mod available.
 
-**Q: When will the friendship start?**
+**Q: When will the friendship start?**  
 A: After you join Cernd. There are certain condition for most dialogues to fire, so just enjoy the game and the talks should come. If you want to know the details, open "list of talks" text file inside the mod package.</p>
 
-**Q: This mod isn't in character at *all*.**
+**Q: This mod isn't in character at *all*.**  
 A: We're always looking for ways to improve the characterisation in this mod, so please post any suggestions or constructive criticism on the <a href="http://www.shsforums.net">forums</a>.
 
-**Q: Have you got any plans to expand the mod by adding more dialogues in future?**
+**Q: Have you got any plans to expand the mod by adding more dialogues in future?**  
 A: There are no current plans to add to the mod, no, but feel free to make suggestions!
 
-**Q: How many dialogues are there added in total?**
+**Q: How many dialogues are there added in total?**  
 A: With this mod installed, you should be able to experience up to 14 dialogues in SoA (3 of those are recoded original dialogues) and up to 4 dialogues in ToB.
 
-**Q: Does this mod change the game in any way besides adding more dialogue to Cernd?**
+**Q: Does this mod change the game in any way besides adding more dialogue to Cernd?**  
 A: No, it shouldn't.
 
-**Q: Is there any chance that player initiated dialogue will be added in future?**
+**Q: Is there any chance that player initiated dialogue will be added in future?**  
 A: There are currently no plans for it.
 
-**Q: I would like to translate the Cernd friendship into another language. Any chance you could TRAify the mod?**
+**Q: I would like to translate the Cernd friendship into another language. Any chance you could TRAify the mod?**  
 A: Sure, we'd be happy to. If you are interested in translating, just send us a line and I'll see what I can do for the next version.
 <div align="right"><a href="#top">Back to top</a></div>
 
