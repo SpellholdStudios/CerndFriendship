@@ -1,0 +1,588 @@
+//////////////////////////////////
+/////// CERN IEP DIALOGUES ///////
+//////////////////////////////////
+
+
+//LOCK OLD ONES
+
+IF
+Global("I#LockOldTalks","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("BCernd7","LOCALS",1)
+SetGlobal("BCernd8","LOCALS",1)
+SetGlobal("BCernd9","LOCALS",1)
+SetGlobal("I#LockOldTalks","GLOBAL",1)
+END
+
+//c1
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  AreaType(FOREST)
+  Global("I#CerndTalk","GLOBAL",0)
+ THEN
+ RESPONSE #100
+  RealSetGlobalTimer("I#CerndTime","GLOBAL",20)
+  SetGlobal("I#CerndTalk","GLOBAL",1)
+END
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  AreaType(FOREST)
+  Global("I#CerndTalk","GLOBAL",1)
+  RealGlobalTimerExpired("I#CerndTime","GLOBAL")
+ THEN
+ RESPONSE #100
+  SetGlobal("I#CerndTalk","GLOBAL",2)
+END
+  
+IF
+  Global("I#CerndTalk","GLOBAL",2)
+ THEN
+ RESPONSE #100
+  MoveToObject(Player1)
+  StartDialogue("CERNDJ",Player1)
+END
+
+//c2
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndTalk","GLOBAL",3)
+ THEN
+ RESPONSE #100
+  RealSetGlobalTimer("I#CerndTime","GLOBAL",1600)
+  SetGlobal("I#CerndTalk","GLOBAL",4)
+END
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndTalk","GLOBAL",4)
+  RealGlobalTimerExpired("I#CerndTime","GLOBAL")
+ THEN
+ RESPONSE #100
+  SetGlobal("I#CerndTalk","GLOBAL",5)
+END
+
+IF
+  Global("I#CerndTalk","GLOBAL",5)
+ THEN
+ RESPONSE #100
+  MoveToObject(Player1)
+  StartDialogue("CERNDJ",Player1)
+END
+
+//c3
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  AreaType(FOREST)
+  Global("I#CerndTalk","GLOBAL",6)
+ THEN
+ RESPONSE #100
+  RealSetGlobalTimer("I#CerndTime","GLOBAL",20)
+  SetGlobal("I#CerndTalk","GLOBAL",7)
+END
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  AreaType(FOREST)
+  Global("I#CerndTalk","GLOBAL",7)
+  RealGlobalTimerExpired("I#CerndTime","GLOBAL")
+ THEN
+ RESPONSE #100
+  SetGlobal("I#CerndTalk","GLOBAL",8)
+END
+
+IF
+  Global("I#CerndTalk","GLOBAL",8)
+ THEN
+ RESPONSE #100
+  MoveToObject(Player1)
+  StartDialogue("CERNDJ",Player1)
+END
+
+//c4
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndTalk","GLOBAL",9)
+ THEN
+ RESPONSE #100
+  RealSetGlobalTimer("I#CerndTime","GLOBAL",1600)
+  SetGlobal("I#CerndTalk","GLOBAL",10)
+END
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  AreaType(CITY)
+  Global("I#CerndTalk","GLOBAL",10)
+  RealGlobalTimerExpired("I#CerndTime","GLOBAL")
+ THEN
+ RESPONSE #100
+  SetGlobal("I#CerndTalk","GLOBAL",11)
+END
+
+
+IF
+  Global("I#CerndTalk","GLOBAL",11)
+ THEN
+ RESPONSE #100
+  MoveToObject(Player1)
+  StartDialogue("CERNDJ",Player1)
+END
+
+//c5
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndSewerTalk","GLOBAL",0)
+  OR(4)
+   AreaCheck("AR0404")
+   AreaCheck("AR0701")
+   AreaCheck("AR0202")
+   AreaCheck("L#NS01")
+ THEN
+ RESPONSE #100
+  RealSetGlobalTimer("I#CerndSewersTime","GLOBAL",20)
+  SetGlobal("I#CerndSewerTalk","GLOBAL",1)
+END
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndSewerTalk","GLOBAL",1)
+  RealGlobalTimerExpired("I#CerndSewersTime","GLOBAL")
+  OR(4)
+   AreaCheck("AR0404")
+   AreaCheck("AR0701")
+   AreaCheck("AR0202")
+   AreaCheck("L#NS01")
+ THEN
+ RESPONSE #100
+  SetGlobal("I#CerndSewerTalk","GLOBAL",2)
+END
+
+IF
+  Global("I#CerndSewerTalk","GLOBAL",2)
+ THEN
+ RESPONSE #100
+  MoveToObject(Player1)
+  StartDialogue("CERNDJ",Player1)
+END
+
+//c6
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndFamiliarTalk","GLOBAL",0)
+  OR(16)
+   HasItem("FAMCAT",Player1)
+   HasItem("FAMCAT25",Player1)
+   HasItem("FAMDUS25",Player1)
+   HasItem("FAMDUST",Player1)
+   HasItem("FAMFAI25",Player1)
+   HasItem("FAMFAIR",Player1)
+   HasItem("FAMFER",Player1)
+   HasItem("FAMFER25",Player1)
+   HasItem("FAMIMP",Player1)
+   HasItem("FAMIMP25",Player1)
+   HasItem("FAMPSD",Player1)
+   HasItem("FAMPSD25",Player1)
+   HasItem("FAMQUA25",Player1)
+   HasItem("FAMQUAS",Player1)
+   HasItem("FAMRAB",Player1)
+   HasItem("FAMRAB25",Player1)
+ THEN
+ RESPONSE #100
+  RealSetGlobalTimer("I#CerndFamiliarTime","GLOBAL",600)
+  SetGlobal("I#CerndFamiliarTalk","GLOBAL",1)
+END
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndFamiliarTalk","GLOBAL",1)
+  RealGlobalTimerExpired("I#CerndFamiliarTime","GLOBAL")
+  OR(16)
+   HasItem("FAMCAT",Player1)
+   HasItem("FAMCAT25",Player1)
+   HasItem("FAMDUS25",Player1)
+   HasItem("FAMDUST",Player1)
+   HasItem("FAMFAI25",Player1)
+   HasItem("FAMFAIR",Player1)
+   HasItem("FAMFER",Player1)
+   HasItem("FAMFER25",Player1)
+   HasItem("FAMIMP",Player1)
+   HasItem("FAMIMP25",Player1)
+   HasItem("FAMPSD",Player1)
+   HasItem("FAMPSD25",Player1)
+   HasItem("FAMQUA25",Player1)
+   HasItem("FAMQUAS",Player1)
+   HasItem("FAMRAB",Player1)
+   HasItem("FAMRAB25",Player1)
+ THEN
+ RESPONSE #100
+  SetGlobal("I#CerndFamiliarTalk","GLOBAL",2)
+END
+
+IF
+  Global("I#CerndFamiliarTalk","GLOBAL",2)
+ THEN
+ RESPONSE #100
+  MoveToObject(Player1)
+  StartDialogue("CERNDJ",Player1)
+END
+
+//c7
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndAbyssTalk","GLOBAL",0)
+  AreaCheck("AR0414")
+ THEN
+ RESPONSE #100
+  RealSetGlobalTimer("I#CerndAbyssTime","GLOBAL",20)
+  SetGlobal("I#CerndAbyssTalk","GLOBAL",1)
+END
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndAbyssTalk","GLOBAL",1)
+  RealGlobalTimerExpired("I#CerndAbyssTime","GLOBAL")
+  AreaCheck("AR0414")
+ THEN
+ RESPONSE #100
+  SetGlobal("I#CerndAbyssTalk","GLOBAL",2)
+END
+
+IF
+  Global("I#CerndAbyssTalk","GLOBAL",2)
+ THEN
+ RESPONSE #100
+  MoveToObject(Player1)
+  StartDialogue("CERNDJ",Player1)
+END
+
+//c8
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndAnathTalk","GLOBAL",0)
+  Global("AnathTemple","GLOBAL",1)
+  AreaCheck("AR1403")
+ THEN
+ RESPONSE #100
+  SetGlobal("I#CerndAnathTalk","GLOBAL",1)
+END
+
+IF
+  Global("I#CerndAnathTalk","GLOBAL",1)
+ THEN
+ RESPONSE #100
+  MoveToObject(Player1)
+  StartDialogue("CERNDJ",Player1)
+END
+
+//c9
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndPostStealTalk","GLOBAL",0)
+  AreaCheck("AR1512")
+ THEN
+ RESPONSE #100
+ RealSetGlobalTimer("I#CerndPostStealTime","GLOBAL",240)
+  SetGlobal("I#CerndPostStealTalk","GLOBAL",1)
+END
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndPostStealTalk","GLOBAL",1)
+  RealGlobalTimerExpired("I#CerndPostStealTime","GLOBAL")
+ THEN
+ RESPONSE #100
+  SetGlobal("I#CerndPostStealTalk","GLOBAL",2)
+END
+
+IF
+  Global("I#CerndPostStealTalk","GLOBAL",2)
+ THEN
+ RESPONSE #100
+  MoveToObject(Player1)
+  StartDialogue("CERNDJ",Player1)
+END
+
+//c10
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndPostStealTalk","GLOBAL",3)
+ THEN
+ RESPONSE #100
+ RealSetGlobalTimer("I#CerndPostStealTime","GLOBAL",4000)
+  SetGlobal("I#CerndPostStealTalk","GLOBAL",4)
+END
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndPostStealTalk","GLOBAL",4)
+  RealGlobalTimerExpired("I#CerndPostStealTime","GLOBAL")
+ THEN
+ RESPONSE #100
+  SetGlobal("I#CerndPostStealTalk","GLOBAL",5)
+END
+
+IF
+  Global("I#CerndPostStealTalk","GLOBAL",5)
+ THEN
+ RESPONSE #100
+  MoveToObject(Player1)
+  StartDialogue("CERNDJ",Player1)
+END
+
+//c11
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndLanthornTalk","GLOBAL",0)
+  PartyHasItem("C6LANTHO")
+ THEN
+ RESPONSE #100
+  RealSetGlobalTimer("I#CerndPostStealTime","GLOBAL",120)
+  SetGlobal("I#CerndLanthornTalk","GLOBAL",1)
+END
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndLanthornTalk","GLOBAL",1)
+  RealGlobalTimerExpired("I#CerndPostStealTime","GLOBAL")
+ THEN
+ RESPONSE #100
+  SetGlobal("I#CerndLanthornTalk","GLOBAL",2)
+END
+
+IF
+  Global("I#CerndLanthornTalk","GLOBAL",2)
+ THEN
+ RESPONSE #100
+  MoveToObject(Player1)
+  StartDialogue("CERNDJ",Player1)
+END
+
+//c12
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndSuldTalk","GLOBAL",0)
+  AreaCheck("AR2800")
+ THEN
+ RESPONSE #100
+  RealSetGlobalTimer("I#CerndSuldTime","GLOBAL",20)
+  SetGlobal("I#CerndSuldTalk","GLOBAL",1)
+END
+
+IF
+  InParty(Myself)
+  See(Player1)
+  !StateCheck("Cernd",CD_STATE_NOTVALID)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  CombatCounter(0)
+  !See([ENEMY])
+  Global("I#CerndSuldTalk","GLOBAL",1)
+  RealGlobalTimerExpired("I#CerndSuldTime","GLOBAL")
+  AreaCheck("AR2800")
+ THEN
+ RESPONSE #100
+  SetGlobal("I#CerndSuldTalk","GLOBAL",2)
+END
+
+IF
+  Global("I#CerndSuldTalk","GLOBAL",2)
+ THEN
+ RESPONSE #100
+  MoveToObject(Player1)
+  StartDialogue("CERNDJ",Player1)
+END
+
+//c13
+
+IF
+ Global("KickedOut","LOCALS",1)
+ Global("CerndBaby","GLOBAL",1)
+ Global("I#CerndBabyCheck","GLOBAL",0)
+THEN
+RESPONSE #100
+ SetGlobal("I#CerndBabyCheck","GLOBAL",1)
+END
+
+IF
+ Global("I#CerndBabyCheck","GLOBAL",1)
+ Global("CerndBaby","GLOBAL",0)
+ InParty(Myself)
+ See(Player1)
+ !StateCheck("Cernd",CD_STATE_NOTVALID)
+ !StateCheck(Player1,CD_STATE_NOTVALID)
+ CombatCounter(0)
+ !See([ENEMY])
+THEN
+RESPONSE #100
+ SetGlobal("I#CerndBabyCheck","GLOBAL",2)
+ RealSetGlobalTimer("I#CerndBabyTime","GLOBAL",120)
+END
+
+IF
+ Global("I#CerndBabyCheck","GLOBAL",2)
+ RealGlobalTimerExpired("I#CerndBabyTime","GLOBAL")
+ InParty(Myself)
+ See(Player1)
+ !StateCheck("Cernd",CD_STATE_NOTVALID)
+ !StateCheck(Player1,CD_STATE_NOTVALID)
+ CombatCounter(0)
+ !See([ENEMY])
+THEN
+RESPONSE #100
+ SetGlobal("I#CerndBabyCheck","GLOBAL",3)
+END
+
+IF
+  Global("I#CerndBabyCheck","GLOBAL",3)
+ THEN
+ RESPONSE #100
+  MoveToObject(Player1)
+  StartDialogue("CERNDJ",Player1)
+END
+
+//c14
+
+IF
+ GlobalGT("CerndNanny","GLOBAL",0)
+ Global("TalkedToCerndNanny","GLOBAL",0)
+ InParty(Myself)
+ See(Player1)
+ !StateCheck("Cernd",CD_STATE_NOTVALID)
+ !StateCheck(Player1,CD_STATE_NOTVALID)
+ CombatCounter(0)
+ !See([ENEMY])
+ Global("I#CerndLostLoveTalk","GLOBAL",0)
+THEN
+RESPONSE #100
+ SetGlobal("I#CerndLostLoveTalk","GLOBAL",1)
+END
+
+IF
+  Global("I#CerndLostLoveTalk","GLOBAL",1)
+ THEN
+ RESPONSE #100
+  MoveToObject(Player1)
+  StartDialogue("CERNDJ",Player1)
+END

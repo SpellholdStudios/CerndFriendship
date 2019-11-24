@@ -1,0 +1,25 @@
+NOTE: Cernd IEP is more an in-game event sensitive friendship and many dialogues are triggered under specific conditions. For those who want to see all talks, we made this list:
+
+Shadows of Amn:
+
+Talk 1: triggers only in forests
+Talk 2: triggers some time after 1st talk
+Talk 3: triggers only in forests, some time after 2nd talk
+Talk 4: triggers only in cities, some time after 3rd talk
+Talk 5: triggers in sewer areas, not linked with previous talks
+Talk 6: triggers only if Bhaalspawn has a familiar in the backpack, not linked with previous talks, happens some time after familiar is detected
+Talk 7: triggers only in the Abyss (Planar Sphere quest)
+Talk 8: triggers a second after talking to Anath the werewolf in her cave, next to the Temple Ruins
+Talk 9: triggers after Bhaalspawn looses his/her soul
+Talk 10: tiggers more than an hour after 9th talk
+Talk 11: triggers after fetching the Lanthorn
+Talk 12: triggers in Suldanessellar
+Talk 13: triggers after Cernd's personal quest
+Talk 14: triggers after Cernd talks to the nanny
+
+Throne of Bhaal:
+
+Talk 1: triggers if Sarevok is in the group
+Talk 2: triggers a while after visiting Amkethran
+Talk 3: triggers a while after 2nd ToB talk
+Talk 4: triggers just before the final fight

@@ -1,0 +1,50 @@
+
+BACKUP ~cernd/backup~
+AUTHOR ~Kaeloree and Lava Del'Vortel~
+VERSION ~1.1~
+README ~cernd/readme.html~
+
+
+// Translations
+AUTO_TRA ~cernd/translations/%s~
+
+ALWAYS
+  // No exception, everything needs to be converted
+  ACTION_DEFINE_ARRAY cerndnoconvert BEGIN END
+
+  // any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
+  ACTION_DEFINE_ARRAY cerndreload BEGIN cernd END
+
+  LAF HANDLE_CHARSETS
+    INT_VAR
+      infer_charsets = 1
+    STR_VAR
+      tra_path = EVAL ~%MOD_FOLDER%/translations~
+      noconvert_array = cerndnoconvert
+      reload_array = cerndreload
+  END
+END
+
+
+LANGUAGE ~English~
+         ~English~
+         ~cernd/translations/english/cernd.tra~
+
+
+BEGIN @1 /* Cernd Friendship for BG2: ToB */
+
+// Adding CD_STATE_NOTVALID
+
+APPEND ~STATE.IDS~
+  ~0x80101FEF CD_STATE_NOTVALID~
+  UNLESS ~CD_STATE_NOTVALID~
+  
+// Compiling dialogue & scripts SOA
+
+COMPILE ~cernd/dialogues/cerndj.d~
+EXTEND_TOP ~cernd.bcs~ ~cernd/scripts/cernd.baf~
+
+// Compiling dialogue & scripts TOB
+
+COMPILE ~cernd/dialogues/cernd25j.d~
+EXTEND_TOP ~cern25.bcs~ ~cernd/scripts/cern25.baf~
