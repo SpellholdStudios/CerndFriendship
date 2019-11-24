@@ -42,7 +42,7 @@ This mod is designed to work on the following Infinity Engine games: the origina
 
 The Cernd Friendship mod should be compatible with all WeiDU mods, however, we cannot test every single one. It is only compatible with BGII: ToB. If you do encounter an error, please let us know by posting the message at our forums.
 
->Although it is not required for the Cernd Friendship to function properly, it is always a good idea install the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a>.
+>Although it is not required for the Cernd Friendship to function properly, it is always a good idea to install the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a>.
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -121,6 +121,7 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 #### Additional writing and coding: Lava Del'Vortel
 #### Editor: Rhaella
 
+## 
 
 #### Special Acknowledgements to:
 
@@ -130,6 +131,7 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 
 If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href="http://www.shsforums.net/topic/36655-rolles-v500/">mod forum</a>.</br>
 
+## 
 
 #### Programs/tools used in creation
 
@@ -138,6 +140,7 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 - <a href="https://gibberlings3.github.io/iesdp/"><acronym title="Infinity Engine Structures Description Project">IESDP</acronym></a> maintained by igi and lynx.
 - <a href="http://www.rarlab.com/">WinRAR</a>, by Eugene Roshal/Alexander Roshal.
 
+## 
 
 #### Copyrights Information
 
