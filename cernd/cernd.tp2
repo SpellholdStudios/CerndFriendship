@@ -1,7 +1,7 @@
 
 BACKUP ~cernd/backup~
 AUTHOR ~Kaeloree and Lava Del'Vortel~
-VERSION ~1.2~
+VERSION ~v1.2~
 README ~cernd/cerndfriendship-readme-%LANGUAGE%.html~ ~cernd/cerndfriendship-readme-english.html~
 
 
@@ -9,36 +9,41 @@ README ~cernd/cerndfriendship-readme-%LANGUAGE%.html~ ~cernd/cerndfriendship-rea
 AUTO_TRA ~cernd/translations/%s~
 
 ALWAYS
-  // No exception, everything needs to be converted
-  ACTION_DEFINE_ARRAY cerndnoconvert BEGIN END
 
-  // any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
-  ACTION_DEFINE_ARRAY cerndreload BEGIN cernd END
+	/* Converts tra files to UTF-8 */
 
-  LAF HANDLE_CHARSETS
-    INT_VAR
-      infer_charsets = 1
-    STR_VAR
-      tra_path = EVAL ~%MOD_FOLDER%/translations~
-      noconvert_array = cerndnoconvert
-      reload_array = cerndreload
-  END
+	// No exception, everything needs to be converted
+	ACTION_DEFINE_ARRAY cerndnoconvert BEGIN END
+
+	// any tra files used in LANGUAGE need to be reloaded after UTF-8 conversion
+	ACTION_DEFINE_ARRAY cerndreload BEGIN cernd END
+
+	LAF HANDLE_CHARSETS
+		INT_VAR
+			infer_charsets = 1
+		STR_VAR
+			tra_path = EVAL ~%MOD_FOLDER%/translations~
+			noconvert_array = cerndnoconvert
+			reload_array = cerndreload
+	END
+
 END
 
 
 LANGUAGE ~English~
-         ~English~
+         ~english~
          ~cernd/translations/english/cernd.tra~
 
 
-BEGIN @1 /* Cernd Friendship for BG2: ToB */
+BEGIN @0 /* Cernd Friendship for BG2: ToB */
+REQUIRE_PREDICATE GAME_INCLUDES ~tob~ @1 /* You must have Throne of Bhaal installed. */
 
 // Adding CD_STATE_NOTVALID
 
 APPEND ~STATE.IDS~
   ~0x80101FEF CD_STATE_NOTVALID~
   UNLESS ~CD_STATE_NOTVALID~
-  
+
 // Compiling dialogue & scripts SOA
 
 COMPILE ~cernd/dialogues/cerndj.d~

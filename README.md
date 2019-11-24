@@ -77,7 +77,7 @@ Run **`setup-cernd.exe`** in your game folder to reinstall, uninstall or otherwi
 
 #### Note for Complete Un-installation
 
-In addition to the methods above for removing individual components, you can completely uninstall the mod using **`setup-rolles --uninstall`** at the command line to remove all components without wading through prompts.</br>
+In addition to the methods above for removing individual components, you can completely un-install the mod using **`setup-cernd --uninstall`** at the command line to remove all components without wading through prompts.</br>
 <div align="right"><a href="#top">Back to top</a></div>
 
 
@@ -90,7 +90,7 @@ In addition to the methods above for removing individual components, you can com
 A: It most certainly should be, but we have not tested it with every single mod available.
 
 **Q: When will the friendship start?**  
-A: After you join Cernd. There are certain condition for most dialogues to fire, so just enjoy the game and the talks should come. If you want to know the details, open "list of talks" text file inside the mod package.</p>
+A: After you join Cernd. There are certain condition for most dialogues to fire, so just enjoy the game and the talks should come. If you want to know the details, open "list of talks" text file inside the mod package.
 
 **Q: This mod isn't in character at *all*.**  
 A: We're always looking for ways to improve the characterisation in this mod, so please post any suggestions or constructive criticism on the <a href="http://www.shsforums.net">forums</a>.
@@ -128,9 +128,6 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 - Thank you to everyone on the Interaction Expansion project team, and everyone who has contributed to the mod!
 - AL|EN: Wrote process which automatically provides Windows, Linux and Mac versions in the same archive file.
 
-
-If you wish to translate the mod, have a suggestion, or should encounter any bugs, please report them to the maintainers at the <a href="http://www.shsforums.net/topic/36655-rolles-v500/">mod forum</a>.</br>
-
 ## 
 
 #### Programs/tools used in creation
@@ -158,12 +155,13 @@ If you wish to translate the mod, have a suggestion, or should encounter any bug
 ##### Version 1.2 (November 24, 2019)
 
 - Added *cernd.ini* metadata file to support AL|EN's "Project Infinity".
+- Added `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
 - Updated deprecated modding tools links.
 - Lower cased files.
 - Updated and renamed readme file to *cerndfriendship-readme-english.html*.
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN!).
 - Updated WeiDU installer to v246.
-- Transfered mod to SpellHold Studios GitHub account
+- Transfered mod to SpellHold Studios GitHub account.
 
 ## 
 
