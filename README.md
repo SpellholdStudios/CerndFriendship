@@ -10,7 +10,7 @@ Baldur's Gate Trilogy and EET<h3>
 </div><br />
 
 
-**Original Author:** Kaeloree & Lava Del'Vortel  
+**Authors:** Kaeloree & Lava Del'Vortel  
 **Mod Website:** <a href="http://www.spellholdstudios.net/ie/npciep">Spellhold Studios</a>  
 **Mod Forum:** <a href="http://www.shsforums.net/index.php?showforum=353">Cernd Friendship</a><br /><br />
 
@@ -71,7 +71,7 @@ The Enhanced Editions are actively supported games. Please note that every patch
 
 Extract the contents of the mod archive into the folder of the game you wish to modify (*the folder which contains the "CHITIN.KEY" file*), using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. On successful extraction, there should be a :file_folder: cernd folder and a setup-cernd.exe file in your game folder. To install, simply double-click **`setup-cernd.exe`** and follow the instructions on screen.
 
-Run **`setup-cernd.exe`** in your game folder to reinstall, uninstall or otherwise change the component settings.
+Run **`setup-cernd.exe`** in your game folder to reinstall, un-install or otherwise change the component settings.
 
 ## 
 
@@ -156,6 +156,7 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 
 - Added *cernd.ini* metadata file to support AL|EN's "Project Infinity".
 - Added `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
+- README command now accepts translated files.
 - Updated deprecated modding tools links.
 - Lower cased files.
 - Updated and renamed readme file to *cerndfriendship-readme-english.html*.
@@ -173,5 +174,5 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 
 ##### Version 1.0 (May 2018)
 
-- Initial release
+- Initial release.
 <div align="right"><a href="#top">Back to top</a></div>

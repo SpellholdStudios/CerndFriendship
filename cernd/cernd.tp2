@@ -11,7 +11,6 @@ AUTO_TRA ~cernd/translations/%s~
 ALWAYS
 
 	/* Converts tra files to UTF-8 */
-
 	// No exception, everything needs to be converted
 	ACTION_DEFINE_ARRAY cerndnoconvert BEGIN END
 
