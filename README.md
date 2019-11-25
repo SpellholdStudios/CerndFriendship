@@ -25,7 +25,7 @@ Baldur's Gate Trilogy and EET<h3>
 
 ## <a name="intro" id="intro"></a>Overview
 
-One of the things many find sorely lacking in the Bioware NPCs are the more complex relationships presented by modern NPC mods--especially in regards to "friendships," the relationships NPCs have with the PC when not romancing them.
+One of the things many find sorely lacking in the Bioware NPCs are the more complex relationships presented by modern NPC mods--especially in regards to "*friendships*", the relationships NPCs have with the PC when not romancing them.
 
 This mod adds a series of dialogues with Cernd.
 
