@@ -155,6 +155,7 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 ##### Version 1.2 (November 24, 2019)
 
 - Added *cernd.ini* metadata file to support AL|EN's "Project Infinity".
+- Component: added *DESIGNATED* number and "*cernd_friendship*" LABEL.
 - Added `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
 - README command now accepts translated files.
 - Updated deprecated modding tools links.
