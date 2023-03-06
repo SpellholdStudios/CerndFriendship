@@ -33,6 +33,9 @@ LANGUAGE ~English~
          ~english~
          ~cernd/translations/english/cernd.tra~
 
+LANGUAGE ~Russian by shaker653 from arcanecoast.ru~
+         ~russian~
+         ~cernd/translations/russian/cernd.tra~
 
 /* =================================== *
  *    Cernd Friendship for BG2: ToB    *
