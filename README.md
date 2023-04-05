@@ -152,6 +152,12 @@ A: Sure, we'd be happy to. If you are interested in translating, just send us a 
 
 ## <a name="versions" id="versions"></a>Versions History
 
+##### Version 1.4 (April 5, 2023)
+
+- Added Russian translation by shaker653 from arcanecoast.ru.
+
+## 
+
 ##### Version 1.3 (December 14, 2019)
 
 - Fixed an issue with *Auto-Package Generator tool*: new version of MacOS (Catalina) prevented the mod to be installed.
